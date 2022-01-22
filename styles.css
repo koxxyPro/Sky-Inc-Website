@@ -11,7 +11,10 @@
   --dark-grey: #222831;
   --pink: #33A5FF;
 }
-
+html
+{
+    scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -151,7 +154,7 @@ nav .logo {
 }
 
 #intro .container {
-  background: url(./images/tech10.jfif) no-repeat;
+  background: url(./images/tech11.jfif) no-repeat;
   background-size: 50%;
   background-position-x: 70%;
   /* z-index: -2; */
@@ -190,6 +193,7 @@ nav .logo {
   font-weight: 700;
   color: var(--white);
   border: 2px solid var(--pink);
+  border-radius: 50px;
   cursor: pointer;
   position: relative;
   z-index: 1;
@@ -327,12 +331,14 @@ nav .logo {
 .service {
   /* width: 80%; */
   background-color: #eee;
+ /* border-radius: 50px; */
   padding: 3rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
   transition: all 0.3s;
+  
 }
 
 .service i:first-child {
@@ -435,6 +441,22 @@ nav .logo {
   color: #777;
 }
 
+.about-text a {
+  display: inline-block;
+    text-decoration: none;
+    color: #777;
+    background-color: #eee;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 50px;
+    box-shadow: 4px 5px 10px #ddd;
+    transition: 0.3s ease-in-out;
+}
+
+.about-text a:hover {
+    background: #33A5FF;
+}
+
 /* Blog section */
 /* Blog section */
 /* Blog section */
@@ -520,7 +542,7 @@ nav .logo {
 }
 
 .contact h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--white);
 }
