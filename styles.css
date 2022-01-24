@@ -57,6 +57,26 @@ img {
 }
 
 /* FOR ABOUT PAGE */
+.title
+{
+    text-align: center;
+    margin: 20px,80px;
+    position: relative;
+    line-height: 60px;
+    font-size: 3rem;
+}
+.title::after
+{
+    content: '';
+    background: #33A5FF;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .row
 {
     display: flex;
