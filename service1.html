@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Inc</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <!-- LOGO -->
+          <a href="index.html" style="scroll-behavior: smooth;"><img class="logo" src="./images/main-logo.png" alt="" /></a>
+          <!-- HAMBURGER ICON -->
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+          <!-- NAVIGATION -->
+          <ul class="nav-ul">
+            <i class="fas fa-times close"></i>
+            <li><a href="index.html" class="nav-link current" style="scroll-behavior: smooth;">Home</a></li>
+            <li><a href="index.html" class="nav-link">Services</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+            <li><a href="" class="nav-link">Portfolio</a></li>
+          </ul>
+          <i class="fas fa-search search"></i>
+        </nav>
+      </div>
+    </header>
+
+    <!--Service 1-->
+    <div class="container">
+      <h1 class="title">Mobile Apps, Back end & API Development</h1>
+      <div class="row">
+        <div class="col-2">
+            <h1>Trusted Mobile App<br>Development Company</h1>
+            <ul>
+              <li>Benefit from the expertise of seasoned mobile app & back-end developers to build outstanding applications.</li>
+              <li>Leverage constant communication and collaboration to stay updated on every step of custom mobile app development services outsourcing.</li>
+              <li>Entirely at your disposal, your dedicated team is set to reach goals without distractions.</li>
+            </ul>
+            <br>
+            <a href="about.html" style="scroll-behavior: smooth;" class="btn2 btn2-dark">Discuss your Project</a>
+        </div>
+        <div class="col-2">
+          <img src="./images/phone.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title">Technologies</h1>
+      <section class="brand-logos slider">
+        <div class="slick-slide"><img src="./images/vue.png" alt=""></div>
+        <div class="slick-slide"><img src="./images/flutter.png" alt=""></div>
+        <div class="slick-slide"><img src="./images/kotlin.jfif" alt=""></div>
+        <div class="slick-slide"><img src="./images/react.png" alt=""></div>
+        <div class="slick-slide"><img src="./images/angular.png" alt=""></div>
+        <div class="slick-slide"><img src="./images/laravel.png" alt=""></div>
+        <div class="slick-slide"><img src="./images/python.jfif" alt=""></div>
+      </section>
+    </div>
+
+    <!-- contact section -->
+    <section id="contact">
+        <div class="container">
+          <div class="contact">
+            <!-- icons -->
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"><a href="https://api.whatsapp.com/send?phone=0713549623"></a></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <!-- text -->
+            <h2>Don't Miss Any Opportunity !</h2>
+  
+            <!-- button -->
+            <a href="#" class="btn btn-dark">Schedule a Call</a>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <p>&copy; 2022 Sky Inc Limited. All rights reserved</p>
+        </div>
+    </footer>
+    
+      <div class="modal" id="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+          <form action="">
+            <input type="text" placeholder="Search" />
+            <i class="fas fa-search search"></i>
+          </form>
+        </div>
+      </div>
+
+    <!-- Scroll-To-Top Button -->
+    <div id="go-top" class="fa fa-arrow-up"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+
+      (function ($, window, document){
+        $.fn.goTop = function (options){
+          var defaults = {
+            scrollTop: 100,
+            scrollSpeed: 1000,
+            fadeInSpeed: 1000,
+            fadeOutSpeed: 500
+          };
+
+          var options = $.extend(defaults, options);
+          var $this = $(this);
+          $(window).on('scroll', function (){
+            if ($(window).scrollTop() > options.scrollTop){
+              $this.fadeIn(options.fadeInSpeed);
+            } else{
+              $this.fadeOut(options.fadeOutSpeed);
+            }
+          })
+          $this.on('click', function(){
+            $('html,body').animate({
+              'scrollTop': 0
+            }, options.speed)
+          })
+        }
+      })(jQuery, window, document)
+
+      $('#go-top').goTop({
+        scrollTop: 100,
+        scrollSpeed: 1000,
+        fadeInSpeed: 1000,
+        fadeOutSpeed: 500
+      })
+
+    </script>
+    <!-- End Button -->
+
+    <!--Slider-->
+    <script>
+
+      $(document).ready(function(){
+        $('.brand-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [{
+            breakpoint: 768,
+            setting: {
+              slidesToShow: 4
+            }
+          }, {
+            breakpoint: 520,
+            setting: {
+              slidesToShow: 3
+            }
+          }]
+        });
+      });
+      
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>      

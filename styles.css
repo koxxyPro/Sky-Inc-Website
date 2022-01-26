@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 p {
@@ -63,13 +63,13 @@ img {
     margin: 20px,80px;
     position: relative;
     line-height: 60px;
-    font-size: 3rem;
+    font-size: 3.8rem;
 }
 .title::after
 {
     content: '';
     background: #33A5FF;
-    width: 80px;
+    width: 90px;
     height: 3px;
    /* border-radius: 5px; */
     position: absolute;
@@ -97,9 +97,52 @@ img {
 }
 .col-2 h1
 {
-    font-size: 50px;
+    font-size: 3.5rem;
     line-height: 60px;
     margin: 25px 0;
+}
+.col-2 ul{
+  list-style-type: disc;
+}
+.col-2 ul li{
+  float: inline-start;
+  font-size: 1.8rem;
+}
+.btn2 {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #808080;
+  border: 2px solid var(--pink);
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none;
+}
+.btn2-dark {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.btn2::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 99.5%;
+  height: 100%;
+  background-color: var(--pink);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+
+.btn2:hover::before {
+  /* background-color: var(--pink); */
+  transform: translateX(0);
 }
 /* NAVIGATION SECTION */
 
@@ -491,7 +534,7 @@ nav .logo {
   display: inline-block;
     text-decoration: none;
     color: #777;
-    background-color: #eee;
+   /* background-color: #eee; */
     padding: 10px 20px;
     margin-top: 15px;
     border-radius: 50px;
@@ -500,7 +543,7 @@ nav .logo {
 }
 
 .about-text a:hover {
-    background: #33A5FF;
+    background: #258aff;
 }
 
 /* Blog section */
@@ -569,6 +612,7 @@ nav .logo {
   justify-content: space-between;
   align-items: center;
 }
+
 .contact i {
   color: var(--white);
   font-size: 2.5rem;
@@ -681,4 +725,42 @@ form i {
   line-height: 45px;
   text-align: center;
   cursor: pointer;
+}
+
+/*---Slider---*/
+.slick-slide{
+  margin: 0 20px;
+}
+.slick-slide img{
+  width: 100%;
+}
+.slick-slider{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.slick-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-track{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-slide{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide img{
+  display: block;
+}
+.slick-initialized .slick-slide{
+  display: block;
 }

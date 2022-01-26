@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media-queries.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -27,7 +28,7 @@
           <ul class="nav-ul">
             <i class="fas fa-times close"></i>
             <li><a href="index.html" class="nav-link current" style="scroll-behavior: smooth;">Home</a></li>
-            <li><a href="#" class="nav-link">Services</a></li>
+            <li><a href="service1.html" class="nav-link">Services</a></li>
             <li><a href="#" class="nav-link">About</a></li>
             <li><a href="#" class="nav-link">Contact</a></li>
             <li><a href="" class="nav-link">Portfolio</a></li>
@@ -37,6 +38,7 @@
       </div>
     </header>
 
+    <!-- About -->
     <div class="container">
       <h1 class="title">Who We are</h1>
       <div class="row">
@@ -56,16 +58,45 @@
       </div>
     </div>
 
+    
 
-    <div class="modal" id="modal">
-      <span class="close-modal">&times;</span>
-      <div class="modal-content">
-        <form action="">
-          <input type="text" placeholder="Search" />
-          <i class="fas fa-search search"></i>
-        </form>
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact">
+          <!-- icons -->
+          <div class="contact-icon">
+            <i class="fab fa-whatsapp"><a href="https://api.whatsapp.com/send?phone=0713549623"></a></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <!-- text -->
+          <h2>Don't Miss Any Opportunity !</h2>
+
+          <!-- button -->
+          <a href="#" class="btn btn-dark">Schedule a Call</a>
+        </div>
       </div>
+    </section>
+  
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2022 Sky Inc Limited. All rights reserved</p>
     </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <span class="close-modal">&times;</span>
+    <div class="modal-content">
+      <form action="">
+        <input type="text" placeholder="Search" />
+        <i class="fas fa-search search"></i>
+      </form>
+    </div>
+  </div>
 
     <!-- Scroll-To-Top Button -->
     <div id="go-top" class="fa fa-arrow-up"></div>
