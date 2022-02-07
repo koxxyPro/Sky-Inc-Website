@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AVATECIAL</title>
+        <script
+          src="https://kit.fontawesome.com/1935d064dd.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="media-queries.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                   <!-- LOGO -->
+                   <a href="index.html" style="scroll-behavior: smooth;"><img class="logo" src="./images/main-logo.png" alt="" /></a>
+                   <!-- HAMBURGER ICON -->
+                   <div class="hamburger">
+                      <i class="fas fa-bars"></i>
+                   </div>
+                    <!-- NAVIGATION -->
+                   <ul class="nav-ul">
+                     <i class="fas fa-times close"></i>
+                     <li><a href="index.html" class="nav-link current" style="scroll-behavior: smooth;">Home</a></li>
+                     <li><a href="index.html" class="nav-link">Services</a></li>
+                     <li><a href="about.html" class="nav-link">About</a></li>
+                     <li><a href="#" class="nav-link">Contact</a></li>
+                     <li><a href="" class="nav-link">Portfolio</a></li>
+                  </ul>
+                  <i class="fas fa-search search"></i>
+                </nav>
+            </div>
+        </header>
+
+        <!--Service3-->
+        <div class="container">
+            <h1 class="title">Web Design and Development Services</h1>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Outsource <span>web design</span> and <span>development</span> to a creative team of web developers</h1>
+                    <ul>
+                        <li>Get seasoned web development experts who ramp up quickly, and readily contribute to your business success.</li>
+                        <li>Communicate and collaborate to stay updated with every development in the project.</li>
+                        <li>Onboard dedicated web developers and designers for your mission-critical web projects.</li>
+                        <br>
+                        <a href="contact2.html" style="scroll-behavior: smooth;" class="btn2 btn2-dark">Discuss your Project</a>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <img src="./images/webdesign.PNG" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <h1 class="title-2">How <span>Web Development Outsourcing</span><br>With AVATECIAL Works?</h1>
+            <div class="row">
+                <div class="col-2">
+                  <img src="./images/webdesign2.PNG" alt="">
+                </div>
+                <div class="col-2">
+                  <div class="content">
+                    <ul>
+                      <h1><li style="color: #258aff;">Discuss Your Requirements</li></h1>
+                      <p style="color: #555;">Schedule a meeting to discuss your project ideas and requirements with one of our team members.</p>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <h1><li style="color: #258aff;">Get a Proposal</li></h1>
+                      <p style="color: #555;">We review your requirements and identify web solutions that are effective and feasible as per your needs.</p>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <h1><li style="color: #258aff;">Web Desing and Development</li></h1>
+                      <p style="color: #555;">Once the requirements are identified, the team starts developing the solution.</p>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <h1><li style="color: #258aff;">Quality Assurance</li></h1>
+                      <p style="color: #555;">After development and final review from the client, the quality assurance team ensures that everything is on track.</p>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <ul>
+                       <h1><li style="color: #258aff;">Project Launch</li></h1>
+                      <p style="color: #555;">Our team launches your brand-new site after all checks and revisions have been cleared to ensure the highest standard.</p>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- contact section -->
+    <section id="contact">
+        <div class="container">
+          <div class="contact">
+            <!-- icons -->
+            <div class="contact-icon">
+              <a href="https://wa.me/0713549623"><i class="fab fa-whatsapp"></i></a>
+              <i class="fab fa-github"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <!-- text -->
+            <h2>Curious about our services?</h2>
+  
+            <!-- button -->
+            <a href="contact.html" class="btn btn-dark">Check Out Portfolio</a>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <p>&copy; 2022 Developed by AVATECIAL. All rights reserved</p>
+        </div>
+    </footer>
+    
+      <div class="modal" id="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+          <form action="">
+            <input type="text" placeholder="Search" />
+            <i class="fas fa-search search"></i>
+          </form>
+        </div>
+      </div>
+
+    <!-- Scroll-To-Top Button -->
+    <div id="go-top" class="fa fa-arrow-up"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+
+      (function ($, window, document){
+        $.fn.goTop = function (options){
+          var defaults = {
+            scrollTop: 100,
+            scrollSpeed: 1000,
+            fadeInSpeed: 1000,
+            fadeOutSpeed: 500
+          };
+
+          var options = $.extend(defaults, options);
+          var $this = $(this);
+          $(window).on('scroll', function (){
+            if ($(window).scrollTop() > options.scrollTop){
+              $this.fadeIn(options.fadeInSpeed);
+            } else{
+              $this.fadeOut(options.fadeOutSpeed);
+            }
+          })
+          $this.on('click', function(){
+            $('html,body').animate({
+              'scrollTop': 0
+            }, options.speed)
+          })
+        }
+      })(jQuery, window, document)
+
+      $('#go-top').goTop({
+        scrollTop: 100,
+        scrollSpeed: 1000,
+        fadeInSpeed: 1000,
+        fadeOutSpeed: 500
+      })
+
+    </script>
+    <!-- End Button -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>

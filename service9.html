@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AVATECIAL</title>
+        <script
+          src="https://kit.fontawesome.com/1935d064dd.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="media-queries.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                      <!-- LOGO -->
+                   <a href="index.html" style="scroll-behavior: smooth;"><img class="logo" src="./images/main-logo.png" alt="" /></a>
+                   <!-- HAMBURGER ICON -->
+                   <div class="hamburger">
+                      <i class="fas fa-bars"></i>
+                   </div>
+                    <!-- NAVIGATION -->
+                   <ul class="nav-ul">
+                     <i class="fas fa-times close"></i>
+                     <li><a href="index.html" class="nav-link current" style="scroll-behavior: smooth;">Home</a></li>
+                     <li><a href="index.html" class="nav-link">Services</a></li>
+                     <li><a href="about.html" class="nav-link">About</a></li>
+                     <li><a href="#" class="nav-link">Contact</a></li>
+                     <li><a href="" class="nav-link">Portfolio</a></li>
+                  </ul>
+                  <i class="fas fa-search search"></i>
+                </nav>
+            </div>
+        </header>
+
+        <!--Service 9-->
+        <div class="container">
+            <h1 class="title">Software Management Services</h1>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Save time with our software project management services.</h1>
+                    <ul>
+                        <li>Employ effective and optimized Software Project Management Services.</li>
+                        <li>Reduce uncertainties and risks in software project development.</li>
+                        <li>Streamline the working process to implement your idea.</li>
+                    </ul>
+                    <br>
+                    <a href="contact2.html" style="scroll-behavior: smooth;" class="btn2 btn2-dark">Discuss your Project</a>
+                </div>
+                <div class="col-2">
+                    <img src="./images/softwareManagement.PNG" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <h1 class="title-2">Our Software Project Management <span>Approach</span></h1>
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/approach.PNG" alt="">
+                </div>
+                <div class="col-2">
+                    <p style="color: #555; font-size: 1.8em;">Working with AVATECIAL, you ensure predictably successful results each time. 
+                       Our streamlined and thorough processes keep us competitive. AVATECIAL strives to optimize
+                       the big data consulting and analyzing process to make sure your time and investment are utilized 
+                       most efficiently. By simplifying our strategies, we make outsourcing big data consulting the best 
+                       experience for you and your customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact">
+            <div class="container">
+              <div class="contact">
+                <!-- icons -->
+                <div class="contact-icon">
+                  <a href="https://wa.me/0713549623"><i class="fab fa-whatsapp"></i></a>
+                  <i class="fab fa-github"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <!-- text -->
+                <h2>Curious about our services?</h2>
+      
+                <!-- button -->
+                <a href="contact.html" class="btn btn-dark">Check Out Portfolio</a>
+              </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+              <p>&copy; 2022 Developed by AVATECIAL. All rights reserved</p>
+            </div>
+        </footer>
+        
+          <div class="modal" id="modal">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+              <form action="">
+                <input type="text" placeholder="Search" />
+                <i class="fas fa-search search"></i>
+              </form>
+            </div>
+          </div>
+    
+        <!-- Scroll-To-Top Button -->
+        <div id="go-top" class="fa fa-arrow-up"></div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+        <script>
+    
+          (function ($, window, document){
+            $.fn.goTop = function (options){
+              var defaults = {
+                scrollTop: 100,
+                scrollSpeed: 1000,
+                fadeInSpeed: 1000,
+                fadeOutSpeed: 500
+              };
+    
+              var options = $.extend(defaults, options);
+              var $this = $(this);
+              $(window).on('scroll', function (){
+                if ($(window).scrollTop() > options.scrollTop){
+                  $this.fadeIn(options.fadeInSpeed);
+                } else{
+                  $this.fadeOut(options.fadeOutSpeed);
+                }
+              })
+              $this.on('click', function(){
+                $('html,body').animate({
+                  'scrollTop': 0
+                }, options.speed)
+              })
+            }
+          })(jQuery, window, document)
+    
+          $('#go-top').goTop({
+            scrollTop: 100,
+            scrollSpeed: 1000,
+            fadeInSpeed: 1000,
+            fadeOutSpeed: 500
+          })
+    
+        </script>
+        <!-- End Button -->
+    
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
